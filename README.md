@@ -14,16 +14,26 @@ J'ai décidé d'utiliser le framework [Nestjs](https://docs.nestjs.com) (qui uti
 
 ## Mise en place du projet
 
-1. Créer un nouveau projet
+1. Générer les fichiers du serveur avec le CLI Nest:
 
-Depuis votre répertoire de développement préféré, créez un répertoire pour un nouveau projet et accédez-y:
+Depuis votre répertoire de développement préféré, exécutez ces commandes:
+
 ```bash
-$ mkdir graphql-nest-example
+$ nest new graphql-nest-example
 $ cd graphql-nest-example
 ```
 
-2. Générer les fichiers du serveur avec le CLI Nest:
+2. Lancez le serveur
 
 ```bash
-$ nest new .
+$ npm run start:dev
+```
+
+> N:B J'ai eu une erreur en démarrant le serveur.\
+> https://stackoverflow.com/questions/66809411/webpack-typescript-errors-on-fresh-nestjs-app
+
+3. Ajouter les dépendances de graphql
+4. 
+```bash
+$ npm run start:dev
 ```
