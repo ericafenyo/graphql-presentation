@@ -1,2 +1,29 @@
-# graphql-presentation
-A quick look at the GraphQL technology with an example project
+# Présentation de GraphQL
+Un bref aperçu de la technologie GraphQL
+
+## Introduction
+**GraphQL** (pour **Graph** **Q**uery **L**anguage), une alternative aux [API REST](https://fr.wikipedia.org/wiki/Representational_state_transfer)(**Re**presentational **S**tate**T**ransfer) est un [langage de requêtes](https://fr.wikipedia.org/wiki/Langage_de_requête), créé par Facebook en 2012, avant d'être publié comme projet [open-source](https://fr.wikipedia.org/wiki/Open_source) en 2015.
+> ref: https://fr.wikipedia.org/wiki/GraphQL
+
+J'ai décidé d'utiliser le framework [Nestjs](https://docs.nestjs.com) (qui utilise [Express](https://expressjs.com/) sous le capot) pour m'aider à accélérer la configuration du serveur.
+
+## Prérequis
+
+- node/NPM
+- nestjs cli
+
+## Mise en place du projet
+
+1. Créer un nouveau projet
+
+Depuis votre répertoire de développement préféré, créez un répertoire pour un nouveau projet et accédez-y:
+```bash
+$ mkdir graphql-nest-example
+$ cd graphql-nest-example
+```
+
+2. Générer les fichiers du serveur avec le CLI Nest:
+
+```bash
+$ nest new .
+```
