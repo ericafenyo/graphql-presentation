@@ -1,5 +1,5 @@
 # Présentation de GraphQL
-Un bref aperçu de la technologie GraphQL
+Un bref aperçu de la technologie GraphQL (30 juil 14h  - TransWay)
 
 ## Checklist
 - [ ] Introduction
