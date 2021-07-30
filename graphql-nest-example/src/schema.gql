@@ -1,0 +1,64 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Address {
+  id: ID!
+  userId: ID!
+  streetName: String!
+  postalCode: Int
+  city: String!
+  country: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  age: Int!
+  gender: Gender!
+  email: String!
+  weight: Float
+  address: Address
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  UNSPECIFIED
+}
+
+type Query {
+  user(userId: String!): User!
+  users: [User!]!
+}
+
+type Mutation {
+  addUser(user: UserInput!): User!
+  updateUser(user: UpdateUserInput!, userId: String!): User!
+  deleteUser(userId: String!): Int!
+  deleteAll: Int!
+}
+
+input UserInput {
+  name: String!
+  age: Int!
+  gender: Gender!
+  emailAddress: String!
+  weight: Float
+  address: AddressInput
+}
+
+input AddressInput {
+  streetName: String!
+  postalCode: Int!
+  city: String!
+  country: String!
+}
+
+input UpdateUserInput {
+  name: String
+  age: Int
+  gender: Gender
+  emailAddress: String
+  weight: Float
+}
